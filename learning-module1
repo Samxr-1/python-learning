@@ -1,0 +1,27 @@
+x = 1 # integer int
+y = 2.0 # float float
+z = "Hello" # string str
+
+# ----------------------------- MATH Expressions
+1 + 1 = 2
+1 - 1 = 0
+1 / 1 = 1.0 # devision for float
+1 // 1 = 1  # devision for int
+3 * 3 = 9
+3 ** 3 = 27 # exponent
+
+# ----------------------------- String
+
+name = "Samer Aridi" 
+print(name[0])  # OUTPUT: S
+print(name[1])  # OUTPUT: a
+print(name[-1]) # OUTPUT: i
+
+print(name[0:3]) # OUTPUT: Sam
+print(name[::2]) # OUTPUT (skips letter): SmrAii
+print(name[0:4:2]) # OUTPUT: Sm
+
+print(len(name)) # OUTPUT: 10
+
+# backslashes \  | \n: new line | \t: tab |
+# methods  | .upper(): all caps | .replace("X", "Y"): replaces X with Y in a new string | .find("mer"): first letter, --> 2
