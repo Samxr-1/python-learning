@@ -1,0 +1,24 @@
+# Tuples ---------------- can't be changed
+  Ratings = (1, 5, 8, 3, 9, 4, 2.0, 'name')
+  Ratings[0] # OUTPUT: 1
+  
+  tuple = (1, 5, 2, 7, 3, 9, 4, 0, 6, 8)
+  sorted_tuple = sorted(tuple)    # OUTPUT: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+  # tuples can have nets in them
+  tuple = (1, 2, ('jack', 4, 'same'), 5, (9, 8, (1, 2)))
+  tuple[2][2] # OUTPUT: same
+
+# Lists ------------------ can be changed
+  list1 = [1, 5, 2.6, 8, 'hello', 3, [3, 4], (1, 2)]   # can nest lists and tuples
+  list1.extend(['pop', 21])   # would add to the list
+  lis1.append(['pop', 21])    # would add it as one element ---> Nest
+  lis1[0] = 6.5  # this chnages 0 to 6.5
+  del(lis1[0])   # this delets 1
+  list1[-1].split() # this splits two words with a space separating them into two different elements
+
+  my_list = [10, 20, 30, 40, 50] 
+  my_list.remove(30) # Removes the element 30 
+
+  my_list = [1, 2, 3, 4, 5] 
+  my_list.reverse() print(my_list)  # Output: [5, 4, 3, 2, 1]
