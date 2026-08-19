@@ -22,3 +22,34 @@
 
   my_list = [1, 2, 3, 4, 5] 
   my_list.reverse() print(my_list)  # Output: [5, 4, 3, 2, 1]
+
+# Dictionaries ---------- keys are immutable, vlaues are
+  dict = {
+          "Thriller": 1982,
+          "Back in Black": 1980,
+          "The Bodyguard": 1992
+         }
+  dict['Guardian'] = '2007' # adds
+  del(dict["Thriller"]) # deletes the key and value
+  "The Bodyguard" in Dict # OUTPUT: True
+  dict.keys()  # prints the keys
+  dict.values() # prints the values
+
+# Sets --------------- unordered, no duplicates
+  Set1 = {"pop", "rock", "soul", "hard rock", "rock", "R&B", "rock", "disco"}
+  # ----> Set1 = {"pop", "rock", "soul", "hard rock", "R&B", "disco", "tomato"}
+  # lists can be switched to sets
+  list1 = ["test", "testing", "test", "testing the test"]
+  list1_set = set(list1)
+  ----> list1_set = {"test", "testing", "testing the test"}
+
+  A = {"Lemon", "Orange", "Potato", "tomato, disco"}
+  A.add("Juice") # adds juice
+  A.remove("Juice") # removes juice
+  "Orange" in A # True
+
+  A_Set1 = Set1 & A
+  -----> A_set1 = {"tomato", "disco"}
+  A.union(Set1) # all but only once(the common)
+    
+  
