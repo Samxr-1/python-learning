@@ -1,0 +1,36 @@
+# Conditions --------------------
+  # using 'if'
+  if "age" < 18:
+    print("No access to concert")
+  else:
+    print("Access Approved")
+
+# Loops ------------------------
+  # range(3) ----> [0, 1, 2]
+  print(list(range(3)))   # OUTPUT: [0, 1, 2]
+  print(list(range(10, 13))) # OUTPUT: [10, 11, 12]
+
+  # FOR LOOPS   (used to loop something for certain amount of times)
+  colored_boxes = ["pink", "blue", "green", "yellow"]
+  for i in range(0,4):
+    colored_boxes[i] = "white"
+    print(colored_boxes[i])
+
+  squares = ["red", "yellow", "green"]
+  for i,square in enumerate(squares):  # enumerate is needed to keep track of both the item and its position in a list
+    square
+    i
+    print(f"{i} : {square}")
+    # OUTPUT: 0 : red
+              1 : yellow
+              2 : green
+    # i displays the index (0, 1, 2), the square displays the name "red, "yellow")
+
+  # WHILE LOOPS   (only run if a condition is met)
+    squares = ["red", "red", "yellow", "red", "blue", "red"]
+    red_squares = []
+    i = 0
+    while(squares[i] == "red"):  # stops when the index is not equal to red
+      red_squares.append(squares[i])
+      i = i+1 # this raises the index by 1 to continue the other indexes in the list
+    print(red_squares) # prints red two times only in the red_squares
