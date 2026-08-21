@@ -1,0 +1,29 @@
+names_stored = {
+    "Samer": {"Age": 16, "City": "Beirut"}
+}
+
+while True:
+    print("-----------------------------------------------")
+    print(f"Current names are: {list(names_stored.keys())}")
+    choice = input("What would you like to do? (add/remove/view): ")
+    if choice == "add":
+        names_added = input("Enter a name to add: ")
+        age_added = int(input("Enter age: "))
+        city_added = input("Enter city: ")
+
+        names_stored[names_added] = {"Age": age_added, "City": city_added}
+    elif choice == "remove":
+        print(f"Current names are: {list(names_stored.keys())}")
+        names_removed = input("Enter a name to remove: ")
+        if names_removed in names_stored:
+            del names_stored[names_removed]
+            print(f"{names_removed} has been removed.")
+        else:
+            print(f"{names_removed} not found in the list.")
+    elif choice == "view":
+        print(f"Current names are: {list(names_stored.keys())}")
+        names_viewed = input("Enter a name to view details: ")
+        if names_viewed in names_stored:
+            print(f"Details for {names_viewed}: {names_stored[names_viewed]}")
+        else:
+            print(f"{names_viewed} not found in the list.")
