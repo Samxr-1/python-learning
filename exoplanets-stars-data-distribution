@@ -1,0 +1,42 @@
+import time
+
+objects_identified = [
+    'exoplanet', 'star', 'star', 'star', 
+    'star', 'exoplanet', 'star', 'star', 
+    'star', 'exoplanet', 'exoplanet', 'exoplanet', 
+    'star', 'star', 'exoplanet', 'exoplanet', 
+    'star', 'exoplanet', 'star', 'star', 
+    'star', 'star', 'exoplanet', 'exoplanet', 
+    'star', 'star', 'star', 'star', 
+    'star', 'star', 'Unknown', 'star', 'star', 'exoplanet',
+    'star', 'star', 'star', 'star',]
+
+print("-------------------------------------------------")
+print("Total number of objects identified:", len(objects_identified))
+time.sleep(0.5)
+print(f"Exoplanets identified: {objects_identified.count('exoplanet')}")
+time.sleep(0.5)
+print(f"Stars identified: {objects_identified.count('star')}")
+time.sleep(0.5)
+print("-------------------------------------------------")
+print("-------------------------------------------------")
+print("Distributing objects into their respective categories...")
+time.sleep(5)
+
+i = 0
+exoplanets = []
+stars = []
+unidentified = []
+
+while i < len(objects_identified):
+    if objects_identified[i] == 'exoplanet':
+        exoplanets.append(objects_identified[i])
+    elif objects_identified[i] == 'star':
+        stars.append(objects_identified[i])
+    else:
+        unidentified.append(objects_identified[i])
+    i += 1
+
+print("-------------------------------------------------")
+print("All objects have been distributed into their respective categories.")
+print("-------------------------------------------------")
