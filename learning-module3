@@ -34,3 +34,38 @@
       red_squares.append(squares[i])
       i = i+1 # this raises the index by 1 to continue the other indexes in the list
     print(red_squares) # prints red two times only in the red_squares
+
+# FUNCTIONS
+  # like sum, len, sorted, sort
+
+  def add1(a):
+    b=a+1
+    return b
+  add1(5) # OUTPUT: 6
+
+  def mult(a, b)
+    c=a*b
+    return c
+
+  def squares(*colors)   # This prints each color on a different line
+    for color in colors:
+      print(color)
+
+  # Scopes | They are functions that the variables can be changed
+
+  def AddDC(x)
+    x = x + "DC"
+    print(x)
+    return x
+  x = "AC"
+  z = AddDC(x)
+
+# Exception Handling (try...except...else...finally) it tries to excute the code in try block, but if error occured, and one of the exceptions matches the error, it excutes the exception block
+  # Types of Errors: ZeroDivisionError, ValueError, FileNotFoundError, KeyError, TypeError, AttributeError, ImportError...
+  # using Try- except 
+  try:
+    result = 10 / 0
+  except ZeroDivisionError:
+    print("Error: Cannot divide by zero")
+
+  
