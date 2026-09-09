@@ -68,4 +68,32 @@
   except ZeroDivisionError:
     print("Error: Cannot divide by zero")
 
+# Objects & Classes ------------------------
+  class Rectangle(object):   # defining the class
+    def __init__(self,color,height,width):  # intializing the object's data attributes 
+      self.height=height
+      self.width =width
+      self.color=color
+
+  # creating an object of class rectangle:
+  RedRectangle("red", 5, 8)
+  RedRectangle.color="blue" # changes it to blue
+
+  # Methods are used to change the attributes of an object in the class.
+  class Circle(object):
+      def __init__(self, radius, color):
+        self.color = color
+        self.radius = radius
+      def add_radius(self,r):
+        self.radius = self.radius + r
+        return (self.radius)
+      def drawCircle(self):
+        print("Drawing a circle with radius: " + str(self.radius) + " and color: " + self.color)
+
+  # Find out the methods can be used on the object RedCircle: dir(RedCircle)
+
+  c = Circle(5, "red")
+  print(c.add_radius(3)) # prints 8 (5+3)
+  c.drawCircle() # this code doesn't draw a circle you have to put more stuff in drawCircle
+
   
