@@ -1,0 +1,45 @@
+# Reading Files with Open ------------------------------
+
+  file1 = open("/resources/data/Example1.txt", "r")
+  # |    |       |_ file directory  |_file name |_mode('r': reading, 'w': writing, 'a': appending)      } file path         
+  # |    |_ open function
+  # |_ file object
+
+  file1.read()
+  file1.open  # opens the file
+  file1.name  # Print the path of filee
+  file1.mode # prints mode
+  file1.close() # closes the file
+
+  # with statements ----
+    with open("Example1.txt","r") as file1:   # better because it closes the file automatically 
+      file_stuff=file1.read()  if you put x number it will read the x characters and print them on one line
+      print(file_stuff)
+    print(file1.closed)
+    print(file_stuff)
+
+  with open("Example1.txt","r") as file1:
+    file_stuff=file1.readlines()   # reads line one and stores it in he variable file_stuff
+    print(file_stuff)
+
+  with open("Example1","r") as file1
+    for line in file1:
+      print(line)
+
+# Writing Files with Write ------------------------------
+
+  with open("C:\\Users\\user\\Desktop\\App\\pythonlearn\\Example2.txt", "w") as file1: # this creates a new file and puts the write in them
+    file1.write("this is line A\n")
+    file1.write("this is line B\n")
+
+  # r+ : Reading and writing. Cannot truncate the file.
+  # w+ : Writing and reading. Truncates the file.
+  # a+ : Appending and Reading. Creates a new file, if none exists. You dont have to dwell on the specifics of each mode for this lab.
+
+  # .tell() - returns the current position in bytes
+  # .seek(offset,from) - changes the position by 'offset' bytes with respect to 'from'. From can take the value of 0,1,2 corresponding to beginning, relative to current position and end
+
+
+
+
+
